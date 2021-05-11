@@ -67,25 +67,25 @@ function requestInteger(message, min, max) {
     return message
 
 }
+console.log("CA MARCHE ENFOIRE")
+    /*
+      getRandomInteger(200,250) doit renvoyer un nombre compris entre 200 et 250 inclus
+        Le nombre doit se situer dans l'intervalle [200,250]
+          -> 51 possibilités = 250 - 200 + 1
 
-/*
-  getRandomInteger(200,250) doit renvoyer un nombre compris entre 200 et 250 inclus
-    Le nombre doit se situer dans l'intervalle [200,250]
-      -> 51 possibilités = 250 - 200 + 1
+      Pour obtenir une valeur sur ces 51 possibilités :
+        51 * tirage aléatoire entre [0,1[
+          renvoie une valeur flottante comprise dans l'intervalle [0,51[
+          en ramenant au plud grand entier inférieur ou égal, on récupère un entier dans [0,50]
 
-  Pour obtenir une valeur sur ces 51 possibilités :
-    51 * tirage aléatoire entre [0,1[
-      renvoie une valeur flottante comprise dans l'intervalle [0,51[
-      en ramenant au plud grand entier inférieur ou égal, on récupère un entier dans [0,50]
-
-  Exemple :
-    Si Math.random() renvoie 0.28
-      => 51 * 0.28 = 14.28
-    Or, le nombre doit être un entier
-      => Math.floor(14.28) -> 14
-    Et être compris entre 200 et 250
-      => 14 + 200 = 214
-*/
+      Exemple :
+        Si Math.random() renvoie 0.28
+          => 51 * 0.28 = 14.28
+        Or, le nombre doit être un entier
+          => Math.floor(14.28) -> 14
+        Et être compris entre 200 et 250
+          => 14 + 200 = 214
+    */
 
 /**
  * Tire un entier au hasard et le retourne
